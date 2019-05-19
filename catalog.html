@@ -23,7 +23,7 @@
             <a href="#">Закладки</a>
         </div>
         <div class="cart">
-            <a href="#">Корзина</a>
+            <a href="#">Корзина: 10</a>
         </div>
         <div class="order">
             <a href="#">Оформить заказ</a>
@@ -57,7 +57,58 @@
         <h1 class="page-title">Перфораторы</h1>
         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!-- Здесь будет форма -->
+            <form action="https://echo.htmlacademy.ru" method="get">
+                <fieldset>
+                    <legend>Производители:</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="Bosch" checked>
+                                Bosch
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="Interskol">
+                                Интерскол
+                            </label>
+                        </li>
+                        <li> <label>
+                                <input type="checkbox" name="Makita" checked>
+                                Makita
+                            </label>
+                        </li>
+                        <li> <label>
+                                <input type="checkbox" name="DeWalt">
+                                DeWalt
+                            </label>
+                        </li>
+                        <li> <label>
+                                <input type="checkbox" name="Hitachi">
+                                Hitachi
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Питание</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" name="good-type" value="recheargeable" checked>
+                                Аккумуляторные
+                            </label>
+                        </li>
+                        <li>
+                                 <label>
+                                <input type="radio" name="good-type" value="AC-power">
+                                Сетевые
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit">Показать</button>
+            </form>
         </section>
         <section class="catalog">
             <h2 class="visually-hidden">Список инструмента</h2>
@@ -265,9 +316,9 @@
                 Все права защищены</p>
         </div>
         <ul class="footer-social">
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button VC" href="#">Вконтакте</a></li>
+            <li><a class="social-button facebook" href="#">Фейсбук</a></li>
+            <li><a class="social-button instagram" href="#">Инстаграм</a></li>
         </ul>
         <div class="feedback">
             <h3>Обратная связь:</h3>
@@ -278,7 +329,16 @@
             <a href="htmlacademy.ru">htmlacademy.ru</a>
         </div>
     </footer>
-
+    <div class="modal-add-to-cart">
+    <h3 class="modal-add-to-cart-title">Товар добавлен в корзину!</h3>
+    <ul class="modal-add-to-cart-list">
+        <li class="button modal-add-to-cart-order">Оформить заказ</li>
+        <li class="button modal-add-to-cart-continue">Продолжить покупки</li>
+    </ul>
+<button type="button">
+    <img src="img/icon-modal-close.svg" alt="закрыть">
+</button>
+    <div class="modal-check"></div>
+    </div>
 </body>
-
 </html>
