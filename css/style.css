@@ -1,0 +1,579 @@
+body {
+    margin: 0;
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-weight: normal;
+    background-color: #ffffff;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/*-----Header-----*/
+
+.main-header {
+    background-color: #f4f7f9;
+    font-size: 17px;
+}
+
+.header-contacts,
+.login,
+.header-navigation,
+.logged,
+.footer-navigation,
+.footer-goods,
+.footer-social,
+.breadcrumps,
+.form-manufacturer,
+.form-type,
+.catalog-list,
+.pagination-list,
+.modal-add-to-cart-list {
+    list-style: none;
+}
+
+.main-header-logo {
+    background-color: #ee3643;
+    width: 220px;
+    height: 47px;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+.main-header-up {
+    background-color: #293449;
+    line-height: 17px;
+}
+
+.order {
+    background-color: #63a63e;
+}
+
+.main-header a {
+    color: #ffffff;
+}
+
+.form-color {
+    background-color: #293449;
+    color: #ffffff;
+}
+
+.search input:hover {
+    background-color: #212a3a;
+}
+
+.search input:focus {
+    background-color: #ffffff;
+    color: black;
+}
+
+.bookmarks:hover,
+.bookmarks:focus,
+.cart:hover,
+.cart:focus {
+    background-color: #212a3a;
+}
+
+.bookmarks a:active,
+.cart a:active {
+    background-color: #161d29;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.main-header-logo:hover img,
+.main-header-logo:focus img {
+    background-color: #ca2c37;
+}
+
+.main-header-logo:active img {
+    background-color: #ba2732;
+}
+
+.order a:hover,
+.order a:focus {
+    background-color: #5fbb2d;
+}
+
+.order a:active {
+    background-color: #518534;
+}
+
+.main-header-title {
+    font-style: italic;
+    color: #ee3643;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: left;
+}
+
+.header-contacts-number {
+    font-size: 21px;
+    line-height: 21px;
+    letter-spacing: 0.4px;
+    color: #ee3643;
+    width: 270px;
+    height: 45px;
+    border: solid 3px #ffffff;
+    text-align: center;
+
+}
+
+.header-contacts-adress {
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c;
+}
+
+/*-----user area-----*/
+
+.login .button-header {
+    font-size: 21px;
+    line-height: 21px;
+    color: black;
+    background-color: #ffffff;
+}
+
+.logged .button-header {
+    font-size: 16px;
+    color: #32425c;
+    text-decoration: underline;
+}
+
+.logged a:hover,
+.logged a:focus {
+    color: #ee3643;
+}
+
+.logged a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.logged .button-header-catalog-name {
+    font-size: 21px;
+    line-height: 21px;
+    color: black;
+    background-color: #ffffff;
+}
+
+.logged .button-header-catalog-name a:hover {
+    color: black;
+}
+
+.enter {
+    width: 121px;
+    height: 45px;
+}
+
+.registration {
+    width: 150px;
+    height: 45px;
+}
+
+.login :hover,
+.login :focus {
+    color: #ee3643;
+}
+
+.login :active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/*-----user area end-----*/
+
+.header-navigation {
+    background-color: #32425c;
+    font-size: 17px;
+    line-height: 17px;
+    box-shadow: inset 0px -5px 0 0 #293449;
+}
+
+.header-navigation :hover,
+.header-navigation :focus {
+    background-color: #293449;
+}
+
+.header-navigation :focus {
+    background-color: #1d2739;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*-----Header end-----*/
+
+/*-----Index.html-----*/
+
+/*-----Main About company-----*/
+
+.about-company-title {
+    font-size: 30px;
+    line-height: 1;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.about-company p {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 1.85;
+    text-align: left;
+}
+
+.delivery-company {
+    font-size: 18px;
+    line-height: 1.11;
+    text-align: left;
+}
+
+.button-main-about {
+    width: 220px;
+    height: 38px;
+    background-color: #ee3643;
+    color: white;
+    font-size: 14px;
+    line-height: 1.29;
+}
+
+.button-main-about:hover,
+.button-main-about:focus {
+    background-color: #ca2c37;
+}
+
+.button-main-about:active {
+    background-color: #ba2732;
+}
+
+/*-----Main About company end-----*/
+
+/*-----Main contacts-----*/
+
+.contacts-title {
+    font-size: 30px;
+    line-height: 1;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.contacts-main p {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 1.85;
+    text-align: left;
+}
+
+.button-main-writeus {
+    width: 300px;
+    height: 38px;
+    background-color: #ee3643;
+    color: white;
+    font-size: 14px;
+}
+
+.button-main-writeus:hover,
+.button-main-writeust:focus {
+    background-color: #ca2c37;
+}
+
+.button-main-writeus:active {
+    background-color: #ba2732;
+}
+
+/*-----Main contacts end-----*/
+
+/*-----index.html end-----*/
+
+/*-----Catalog.html-----*/
+
+.breadcrumps a {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 1.38;
+    text-align: left;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.perfator-curent {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 1.38;
+    text-align: left;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.page-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: left;
+    color: #32425c;
+    background-color: #f2f6f8;
+}
+
+/*-----Filter-----*/
+.filter fieldset {
+    border: none;
+}
+
+.filter-title {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 1.38;
+    text-align: left;
+    color: black;
+    background-color: #f7f3ec;
+    text-transform: uppercase;
+}
+
+.filter-price {
+    font-family: PTSans;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.76;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+
+.filter-price-range {
+    width: 220px;
+    height: 80px;
+    background-color: #f7f3ec;
+}
+
+.price-enter {
+    width: 95px;
+    height: 38px;
+    background-color: #f7f3ec;
+    border: none;
+    text-align: center
+}
+
+.filter-manufacturer {
+    font-family: PTSans;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.76;
+    text-align: left;
+    color: black;
+    text-transform: uppercase;
+}
+
+.form-manufacturer {
+    font-family: PTSans;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 1.33;
+    text-align: left;
+    color: black;
+}
+
+.form-manufacturer:hover,
+.form-manufacturer:focus {}
+
+.filter-type {
+    font-family: PTSans;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.76;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: black;
+    text-transform: uppercase;
+}
+
+.filter-submit {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 1.38;
+    text-align: center;
+    color: black;
+    width: 140px;
+    height: 38px;
+    border: solid 1px #e5e5e5;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+.filter-submit:hover,
+.filter-submit:focus {
+    border: solid 1px #bdc6ca;
+}
+
+.filter-submit:active {
+    border: solid 1px #ee3643;
+}
+
+/*-----filter end-----*/
+
+/*-----catalog-----*/
+
+.catalog-category {
+    font-family: PTSans;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.11;
+    text-align: center;
+    color: black;
+}
+
+.catalog-item-old-price {
+    font-family: PTSans;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.06;
+    text-align: center;
+    color: #999999;
+    text-decoration: line-through;
+}
+
+.catalog-item:hover {
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+    background-color: var(--white-two);
+}
+
+.pagination-item a {
+    width: 38px;
+    height: 38px;
+    border: solid 1px #e5e5e5;
+    color: black
+}
+
+.pagination-item:hover,
+.pagination-item:focus {
+    border: solid 1px #bdc6ca;
+}
+
+.pagination-item:active {
+    border: solid 1px #ee3643;
+}
+
+/*-----catalog.html end-----*/
+
+/*-----Footer-----*/
+
+.footer-info {
+    background-color: #32425c;
+}
+
+.main-footer-logo {
+    width: 220px;
+    height: 68px;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    background-color: #ee3643;
+}
+
+.main-footer-logo:hover img,
+.main-footer-logo:focus img {
+    background-color: #ca2c37;
+}
+
+.main-footer-logo:active img {
+    background-color: #ba2732;
+}
+
+.footer-contacts {
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: left;
+    color: white;
+}
+
+.footer-navigation a {
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: left;
+    color: white;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+    text-decoration: underline;
+}
+
+.footer-navigation a:active {
+    color: rgba(241, 245, 247, 0.5);
+    text-decoration: none;
+}
+
+.footer-goods a {
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: left;
+    color: #ffd180;
+}
+
+.footer-goods a:hover,
+.footer-goods a:focus {
+    color: #ffd180;
+    text-decoration: underline;
+}
+
+.footer-goods a:active {
+    color: rgba(255, 209, 128, 0.5);
+    text-decoration: none;
+}
+
+.footer-feedback {
+    background-color: #293449
+}
+
+.footer-copyright {
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: left;
+    color: #f3f7f9;
+}
+
+.feedback h3 {
+    font-size: 16px;
+    line-height: 1.13;
+    text-align: left;
+    color: #ffffff;
+}
+
+.feedback span {
+    font-size: 16px;
+    line-height: 1.13;
+    text-align: left;
+    color: #ffd180;
+}
+
+.feedback span:hover,
+.feedback span:focus {
+    color: #ffd180;
+    text-decoration: underline;
+}
+
+.feedback span:active {
+    color: #ee3643;
+}
+
+.developer h3 {
+    font-size: 16px;
+    line-height: 1.13;
+    text-align: left;
+    color: #ffffff;
+}
+
+.developer a {
+    font-size: 16px;
+    line-height: 1.13;
+    text-align: left;
+    color: #ffd180;
+}
+
+.developer a:hover,
+.developer a:focus {
+    color: #ffd180;
+    text-decoration: underline;
+}
+
+.developer a:active {
+    color: #ee3643;
+}
+
+/*-----Footer end-----*/
