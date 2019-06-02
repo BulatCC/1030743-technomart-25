@@ -16,6 +16,16 @@ a {
     padding: 0 10px;
 }
 
+.button {
+    display: block;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    background-color: #ee3643;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
 
 
 /*-----Header-----*/
@@ -144,8 +154,8 @@ a {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.main-header-logo:hover img,
-.main-header-logo:focus img {
+.main-header-logo:hover,
+.main-header-logo:focus {
     background-color: #ca2c37;
 }
 
@@ -343,16 +353,8 @@ a {
 
 .goods-button,
 .manufacturer-button {
-    display: block;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
-    width: 253px;
-    background-color: #ee3643;
-    color: white;
+    min-width: 253px;
     padding: 14px;
-    text-transform: uppercase;
-    border-radius: 4px;
     margin-bottom: 25px;
     margin-top: 25px;
 }
@@ -435,25 +437,18 @@ a {
     margin-bottom: 43px;
 }
 
-.button-main-about {
-    display: block;
-    width: 220px;
-    background-color: #ee3643;
-    color: white;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
+.about-company-button {
     padding-top: 14px;
     padding-bottom: 12px;
-    border-radius: 4px;
+    width: 220px;
 }
 
-.button-main-about:hover,
-.button-main-about:focus {
+.about-company-button:hover,
+.about-company-button:focus {
     background-color: #ca2c37;
 }
 
-.button-main-about:active {
+.about-company-button:active {
     background-color: #ba2732;
 }
 
@@ -490,18 +485,10 @@ a {
     margin-bottom: 40px;
 }
 
-.button-main-writeus {
-    display: block;
+.contacts-button {
     width: 300px;
-    background-color: #ee3643;
-    color: white;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
     padding-top: 14px;
     padding-bottom: 12px;
-    border-radius: 4px;
-    text-transform: uppercase
 }
 
 .button-main-writeus:hover,
@@ -768,8 +755,8 @@ a {
     padding-top: 20px;
 }
 
-.main-footer-logo:hover img,
-.main-footer-logo:focus img {
+.main-footer-logo:hover,
+.main-footer-logo:focus {
     background-color: #ca2c37;
 }
 
