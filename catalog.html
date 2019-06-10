@@ -201,7 +201,7 @@
                             <a href="#" class="price">15500 Р.</a>
                         </li>
                         <li class="catalog-item">
-                                                       <div class="flag flag-new">новинка</div>
+                            <div class="flag flag-new">новинка</div>
                             <div class="actions">
                                 <a href="#" class="buy">Купить</a>
                                 <a href="#" class="bookmark">В закладки</a>
@@ -222,7 +222,7 @@
                             <a href="#" class="price">12500 Р.</a>
                         </li>
                         <li class="catalog-item">
-                           <div class="flag flag-new">новинка</div>
+                            <div class="flag flag-new">новинка</div>
                             <div class="actions">
                                 <a href="#" class="buy">Купить</a>
                                 <a href="#" class="bookmark">В закладки</a>
@@ -255,7 +255,7 @@
 
                     </ul>
                     <ul class="pagination-list">
-                        <li class="pagination-item pagination-item-current">1</li>
+                        <li class="pagination-item pagination-item-current"><a>1</a></li>
                         <li class="pagination-item"><a href="#">2</a></li>
                         <li class="pagination-item"><a href="#">3</a></li>
                         <li class="pagination-item pagination-next"><a href="#">Следующая</a></li>
@@ -330,17 +330,17 @@
             </div>
         </div>
     </footer>
-    <div class="modal-add-to-cart">
-        <h3 class="modal-add-to-cart-title">Товар добавлен в корзину!</h3>
-        <ul class="modal-add-to-cart-list">
-            <li class="modal-add-to-cart-order">Оформить заказ</li>
-            <li class="modal-add-to-cart-continue">Продолжить покупки</li>
-        </ul>
-        <button type="button">
-            <img src="img/icon-modal-close.svg" alt="закрыть">
-        </button>
-        <div class="icon-modal-check"></div>
-    </div>
+    <section class="modal add-to-cart">
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
+            <h3>Товар добавлен в корзину!</h3>
+            <div class="modal-container-catalog">
+                <input class="button modal-button-order" type="submit" value="Оформить заказ">
+                <a class="button modal-shopping-next" href="catalog.html">Продолжить покупки</a>
+            </div>
+            <button type="button" class="modal-close">закрыть
+            </button>
+        </form>
+    </section>
 </body>
 
 </html>
