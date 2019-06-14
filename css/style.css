@@ -32,9 +32,7 @@ input[type="radio"].visually-hidden {
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
-
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
@@ -48,7 +46,7 @@ input[type="radio"].visually-hidden {
     background-color: #ee3643;
     color: white;
     text-transform: uppercase;
-    border-radius: 4px;
+    border-radius: 3px;
 }
 
 .slider-button:hover,
@@ -103,9 +101,9 @@ input[type="radio"].visually-hidden {
 /*-----Header-----*/
 
 .main-header {
+    position: relative;
     background-color: #f4f7f9;
     font-size: 17px;
-
 }
 
 .navigation-wrapper {
@@ -113,37 +111,33 @@ input[type="radio"].visually-hidden {
     background-color: #293449;
 }
 
-
-
 .main-header-logo {
+    position: absolute;
     display: block;
     background-color: #ee3643;
     width: 220px;
-    height: 47px;
+    height: 52px;
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
-
 }
 
 .header-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 13px;
+    padding-top: 18px;
 }
 
-
 .main-header-up {
-    line-height: 17px;
     display: flex;
     align-items: center;
-    margin: auto;
+    margin-bottom: 38px
 }
 
 .order {
     display: block;
     background-color: #63a63e;
-    padding-top: 13px;
-    padding-bottom: 14px;
+    padding-top: 12px;
+    padding-bottom: 11px;
     min-width: 150px;
     text-align: center;
 }
@@ -156,18 +150,18 @@ input[type="radio"].visually-hidden {
     box-sizing: border-box;
     background-color: #293449;
     border: 0px;
-    padding-bottom: 16px;
     font-size: 17px;
 }
 
 .search {
     position: relative;
+    padding-left: 220px;
 }
 
 .header-label {
     position: absolute;
-    top: 12px;
-    left: 17px;
+    top: 11px;
+    left: 237px;
     opacity: 0.3;
 }
 
@@ -183,7 +177,8 @@ input[type="radio"].visually-hidden {
     box-sizing: border-box;
     display: block;
     width: 270px;
-    padding-top: 14px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     padding-left: 49px;
 }
 
@@ -198,11 +193,10 @@ input[type="radio"].visually-hidden {
 
 .bookmarks {
     position: relative;
-    display: block;
     box-sizing: border-box;
     min-width: 150px;
-    padding-top: 14px;
-    padding-bottom: 13px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     padding-left: 44px;
 }
 
@@ -229,8 +223,8 @@ input[type="radio"].visually-hidden {
     display: block;
     box-sizing: border-box;
     min-width: 150px;
-    padding-top: 14px;
-    padding-bottom: 13px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     padding-left: 50px;
 }
 
@@ -289,12 +283,12 @@ input[type="radio"].visually-hidden {
 
 .main-header-middle {
     display: flex;
-    justify-content: flex-end
+    justify-content: flex-end;
+    margin-bottom: 21px;
 }
 
 .header-middle-container {
     display: flex;
-
 }
 
 .main-header-title {
@@ -304,26 +298,27 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
     line-height: 23px;
     text-align: left;
+    padding-right: 15px;
 }
 
 .header-contacts {
     min-width: 270px;
-    margin-left: 71px;
-    padding: 0;
+    margin-left: 70px;
+    margin-top: 9px
 }
 
 .header-contacts-number {
     position: relative;
     box-sizing: border-box;
     font-size: 21px;
-    line-height: 21px;
+    line-height: 1;
     letter-spacing: 0.4px;
     color: #ee3643;
     width: 270px;
     border: solid 3px #ffffff;
-    padding-left: 74px;
-    padding-top: 8px;
-    padding-bottom: 6px;
+    padding-left: 75px;
+    padding-top: 9px;
+    padding-bottom: 9px;
 }
 
 .header-contacts-number::before {
@@ -332,16 +327,17 @@ input[type="radio"].visually-hidden {
     background: url("../img/icon-phone.svg") no-repeat;
     width: 19px;
     height: 19px;
-    left: 15px;
+    left: 14px;
+    top: 10px
 }
 
 .header-contacts-adress {
-    padding-top: 6px;
+    padding-top: 4px;
+    padding-left: 11px;
     font-size: 14px;
     line-height: 24px;
     color: #32425c;
 }
-
 
 /*-----user area-----*/
 
@@ -349,6 +345,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     margin-left: 69px;
     padding: 0;
+    margin-top: 9px
 }
 
 .enter {
@@ -356,9 +353,9 @@ input[type="radio"].visually-hidden {
     position: relative;
     box-sizing: border-box;
     width: 121px;
-    padding-bottom: 9px;
-    padding-top: 11px;
-    padding-right: 27px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-right: 25px;
     text-align: right;
 }
 
@@ -369,7 +366,7 @@ input[type="radio"].visually-hidden {
     height: 17px;
     width: 20px;
     left: 14px;
-    top: 15px;
+    top: 13px;
     opacity: 0.3;
 }
 
@@ -388,9 +385,9 @@ input[type="radio"].visually-hidden {
 .registration {
     display: block;
     width: 150px;
-    padding-bottom: 9px;
-    padding-top: 11px;
-    margin-left: 10px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin-left: 11px;
     text-align: center;
 }
 
@@ -404,7 +401,8 @@ input[type="radio"].visually-hidden {
 .logged {
     position: relative;
     padding: 0;
-    padding-left: 51px;
+    padding-left: 50px;
+    margin-top: 9px;
 }
 
 .logged .button-header {
@@ -421,14 +419,15 @@ input[type="radio"].visually-hidden {
 .logged .button-header-catalog-name {
     position: relative;
     display: block;
+    box-sizing: border-box;
     font-size: 21px;
     line-height: 21px;
     color: black;
     background-color: #ffffff;
     padding-top: 11px;
     padding-bottom: 9px;
-    padding-left: 47px;
-    padding-right: 69px;
+    padding-left: 48px;
+    padding-right: 68px;
 }
 
 .button-header-catalog-name::before {
@@ -437,7 +436,8 @@ input[type="radio"].visually-hidden {
     background: url("../img/icon-user.svg");
     height: 18px;
     width: 20px;
-    left: 13px;
+    left: 15px;
+    top: 12px;
     opacity: 0.3;
 }
 
@@ -446,7 +446,7 @@ input[type="radio"].visually-hidden {
     background: url("../img/icon-logout.svg");
     height: 17px;
     width: 20px;
-    right: 10px;
+    right: 11px;
     top: 12px;
     opacity: 0.3;
 }
@@ -466,7 +466,8 @@ input[type="radio"].visually-hidden {
 .header-container-login {
     display: flex;
     position: relative;
-    padding-top: 6px
+    padding-top: 10px;
+    padding-left: 3px;
 }
 
 .header-container-login::after {
@@ -474,17 +475,16 @@ input[type="radio"].visually-hidden {
     position: absolute;
     border: 2px #32425c solid;
     border-radius: 50%;
-    left: 111px;
-    top: 16px;
+    left: 110px;
+    top: 17px;
 }
 
 .header-container-login .header-login-button {
     font-size: 16px;
     padding-left: 17px;
-    padding-right: 25px;
+    padding-right: 15px;
     color: #32425c;
     text-decoration: underline;
-
 }
 
 .login :hover,
@@ -507,16 +507,18 @@ input[type="radio"].visually-hidden {
     font-size: 17px;
     line-height: 17px;
     box-shadow: inset 0px -5px 0 0 #293449;
-    padding: 0px 50px;
+    padding: 0px;
+    padding-right: 22px;
+    padding-left: 21px;
     margin: 0px;
 }
 
 .haeder-navigation-link {
     display: block;
-    padding-bottom: 26px;
-    padding-top: 22px;
-    padding-left: 31px;
-    padding-right: 31px;
+    padding-bottom: 23px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .header-navigation :hover,
@@ -547,13 +549,14 @@ input[type="radio"].visually-hidden {
 .goods-list {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px
 }
 
 .goods-container {
     width: 320px;
     position: absolute;
     left: 640px;
-    top: 122px;
+    top: 127px;
 }
 
 .goods-list-2 {
@@ -570,7 +573,7 @@ input[type="radio"].visually-hidden {
 }
 
 .goods-item h3 {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: normal;
     padding-left: 23px;
     padding-top: 20px;
@@ -581,10 +584,11 @@ input[type="radio"].visually-hidden {
 .goods-item-button {
     background-color: rgba(0, 0, 0, 0.1);
     font-weight: normal;
-    padding: 12px 0px;
+    padding: 11px 0px;
+    padding-bottom: 10px;
     width: 135px;
-    margin-left: 25px;
-    margin-bottom: 19px;
+    margin-left: 23px;
+    margin-bottom: 21px;
 }
 
 .goods-item-button:hover {
@@ -691,25 +695,26 @@ input[type="radio"].visually-hidden {
     text-align: left;
     color: white;
     text-transform: uppercase;
-    padding-top: 22px;
+    padding-top: 21px;
     padding-left: 26px;
     margin: 0;
 }
 
 .slider-goods-drill span {
     font-size: 18px;
-    line-height: 1.33;
+    line-height: 1.2;
     text-align: left;
     color: white;
-    padding-left: 26px;
+    padding-left: 25px;
 }
 
 .slider-button {
-    padding: 12px 0px;
+    box-sizing: border-box;
+    padding: 10px 0px;
     padding-left: 4;
-    width: 190px;
-    margin-left: 26px;
-    margin-top: 116px;
+    width: 195px;
+    margin-left: 25px;
+    margin-top: 123px;
 }
 
 .slider-goods-drill::before {
@@ -785,7 +790,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     align-items: center;
     padding-right: 24px;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
 }
 
 .popular-goods-title,
@@ -796,15 +801,17 @@ input[type="radio"].visually-hidden {
     text-align: left;
     color: #32425c;
     text-transform: uppercase;
-    padding-left: 30px;
+    padding-left: 29px;
+    margin-top: 30px;
+    margin-bottom: 29px
 }
 
 .goods-button,
 .manufacturer-button {
-    min-width: 253px;
-    padding: 14px;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    min-width: 233px;
+    padding: 10px;
+    margin-bottom: 18px;
+    margin-top: 17px;
 }
 
 .popular-list {
@@ -827,13 +834,35 @@ input[type="radio"].visually-hidden {
 
 .manufacturer-logo {
     display: flex;
+    box-sizing: border-box;
     align-items: center;
     justify-content: center;
     border: solid 1px #eaeaea;
     width: 220px;
     height: 145px;
-    text-align: center;
     margin-bottom: 20px;
+}
+
+
+
+.makita img,
+.dewalt img {
+    padding-bottom: 5px;
+}
+
+.interskol img {
+    padding-bottom: 16px;
+    padding-right: 2px;
+}
+
+.hitachi img {
+    padding-left: 6px;
+    padding-top: 2px
+}
+
+.metabo img {
+    padding-bottom: 9px;
+    padding-left: 4px;
 }
 
 .manufacturer-logo:hover {
@@ -852,6 +881,7 @@ input[type="radio"].visually-hidden {
 .services-wrapper {
     width: 100%;
     background-color: #f4f7f9;
+    margin-bottom: 54px
 }
 
 .services-title {
@@ -863,7 +893,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services > .services-title {
-    padding-top: 63px;
+    padding-top: 62px;
     padding-bottom: 11px;
     color: black;
 }
@@ -892,8 +922,8 @@ input[type="radio"].visually-hidden {
     width: 468px;
     height: 261px;
     background: url("../img/delivery.png");
-    top: -30px;
-    left: 152px;
+    top: -26px;
+    left: 151px;
 }
 
 .guarantee {
@@ -941,6 +971,8 @@ input[type="radio"].visually-hidden {
 
 .services-service > .services-title {
     font-size: 36px;
+    padding-top: 0px;
+    margin-top: -4px;
 }
 
 .services-container {
@@ -975,7 +1007,7 @@ input[type="radio"].visually-hidden {
     background-color: #32425c;
     color: white;
     padding: 18px 0;
-    padding-left: 20px;
+    padding-left: 23px;
     width: 240px;
     box-sizing: border-box;
 }
@@ -1005,7 +1037,7 @@ input[type="radio"].visually-hidden {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
-    margin-bottom: 87px;
+    margin-bottom: 86px;
 }
 
 .about-company {
@@ -1018,7 +1050,7 @@ input[type="radio"].visually-hidden {
     line-height: 1;
     text-align: left;
     text-transform: uppercase;
-    margin-bottom: 38px;
+    margin-bottom: 26px;
 }
 
 
@@ -1027,25 +1059,28 @@ input[type="radio"].visually-hidden {
     font-size: 13px;
     line-height: 1.85;
     text-align: left;
-    margin-bottom: 36px;
+    margin-bottom: 24px;
+}
+
+.about-company p:nth-child(3) {
+    margin-bottom: 20px;
 }
 
 .delivery-company {
     position: relative;
-    font-family: 'PT Sans', 'Arial', serif;
     font-size: 18px;
     line-height: 20px;
     text-align: left;
     left: 36px;
+    margin-top: 1px
 }
 
 .deilivery-company-item {
-    font-family: 'PT Sans', 'Arial', serif;
-    margin-bottom: 9px;
+    margin-bottom: 20px;
 }
 
 .deilivery-company-item:nth-child(3) {
-    margin-bottom: 43px;
+    margin-bottom: 37px;
 }
 
 .deilivery-company-item::before {
@@ -1059,8 +1094,8 @@ input[type="radio"].visually-hidden {
 
 
 .about-company-button {
-    padding-top: 14px;
-    padding-bottom: 12px;
+    padding-top: 11px;
+    padding-bottom: 9px;
     width: 220px;
 }
 
@@ -1081,6 +1116,7 @@ input[type="radio"].visually-hidden {
 
 .contacts-main {
     width: 310px;
+    margin-left: 137px
 }
 
 .contacts-title {
@@ -1089,7 +1125,7 @@ input[type="radio"].visually-hidden {
     line-height: 1;
     text-align: left;
     text-transform: uppercase;
-    margin-bottom: 38px;
+    margin-bottom: 26px;
 }
 
 
@@ -1098,18 +1134,19 @@ input[type="radio"].visually-hidden {
     font-size: 13px;
     line-height: 1.85;
     text-align: left;
-    margin-bottom: 36px;
+    margin-bottom: 31px;
 }
 
 .map {
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
 }
 
 .contacts-button {
-    width: 300px;
-    padding-top: 14px;
-    padding-bottom: 12px;
+    display: block;
+    padding-left: 5px;
+    padding-top: 11px;
+    padding-bottom: 9px;
 }
 
 .button-main-writeus:hover,
@@ -1129,9 +1166,9 @@ input[type="radio"].visually-hidden {
 
 .breadcrumps {
     display: flex;
-    padding-left: 54px;
+    padding-left: 56px;
     position: relative;
-    margin-top: 20px;
+    margin-top: 21px;
     margin-bottom: 20px;
 }
 
@@ -1141,8 +1178,8 @@ input[type="radio"].visually-hidden {
     width: 14px;
     height: 12px;
     background: url("../img/icon-home.svg");
-    left: 1px;
-    top: 3px;
+    top: 2px;
+    left: -2px;
 }
 
 .breadcrumps::after {
@@ -1151,8 +1188,8 @@ input[type="radio"].visually-hidden {
     width: 8px;
     height: 12px;
     background: url("../img/icon-right-small.svg");
-    left: 30px;
-    top: 3px;
+    left: 28px;
+    top: 2px;
 }
 
 .breadcrumps a {
@@ -1181,8 +1218,8 @@ input[type="radio"].visually-hidden {
     width: 8px;
     height: 12px;
     background: url("../img/icon-right-breadcrumps.svg");
-    left: -141px;
-    top: 3px;
+    left: -143px;
+    top: 2px;
 }
 
 .perfator-curent::after {
@@ -1191,8 +1228,8 @@ input[type="radio"].visually-hidden {
     width: 8px;
     height: 12px;
     background: url("../img/icon-right-breadcrumps.svg");
-    left: -22px;
-    top: 3px;
+    left: -23px;
+    top: 2px;
 }
 
 
@@ -1204,9 +1241,10 @@ input[type="radio"].visually-hidden {
     text-align: left;
     color: #32425c;
     background-color: #f2f6f8;
-    padding-top: 32px;
-    padding-bottom: 34px;
-    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 29px;
+    padding-left: 28px;
+    margin-bottom: 7px
 }
 
 /*-----Filter-----*/
@@ -1225,14 +1263,14 @@ input[type="radio"].visually-hidden {
     text-align: left;
     background-color: #f7f3ec;
     text-transform: uppercase;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     border-radius: 3px;
 }
 
 .filter-sorting-item-1 {
     padding-right: 139px;
-    padding-left: 18px;
+    padding-left: 19px;
 }
 
 .filter-sorting-item-2 a {
@@ -1297,16 +1335,16 @@ input[type="radio"].visually-hidden {
     text-align: left;
     background-color: #f7f3ec;
     text-transform: uppercase;
-    padding-top: 11px;
-    padding-bottom: 12px;
-    padding-left: 18px;
-    padding-right: 149px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    padding-left: 19px;
+    padding-right: 151px;
     border-radius: 3px;
 }
 
 .main-catalog-container {
     display: flex;
-    margin-top: 6px;
+    margin-top: 7px;
 }
 
 .filter {
@@ -1325,10 +1363,10 @@ input[type="radio"].visually-hidden {
     font-family: 'PT Sans', 'Arial', serif;
     font-size: 17px;
     font-weight: bold;
-    line-height: 1.76;
     text-align: left;
     text-transform: uppercase;
-    padding-bottom: 15px;
+    padding-bottom: 16px;
+    top: -3px;
 }
 
 .filter-price-range {
@@ -1337,7 +1375,7 @@ input[type="radio"].visually-hidden {
     width: 220px;
     height: 80px;
     background-color: #f7f3ec;
-    border-radius: 4px;
+    border-radius: 3px;
     margin-bottom: 9px;
     padding-top: 39px;
     padding-left: 20px;
@@ -1346,7 +1384,6 @@ input[type="radio"].visually-hidden {
 
 .filter-price-range .scale {
     height: 2px;
-
     background: #d7dcde;
 }
 
@@ -1358,7 +1395,7 @@ input[type="radio"].visually-hidden {
 
 .filter-price-range .toggle {
     position: absolute;
-    top: 31px;
+    top: 30px;
     left: 0;
     width: 4px;
     height: 4px;
@@ -1371,7 +1408,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-price-range .toggle-min {
-    left: 18px;
+    left: 20px;
 }
 
 .filter-price-range .toggle-max {
@@ -1381,35 +1418,30 @@ input[type="radio"].visually-hidden {
 .filter-max-price,
 .filter-min-price {
     font-family: 'PT Sans', 'Arial', serif;
+    box-sizing: border-box;
     width: 95px;
-    height: 38px;
     background-color: #f7f3ec;
     border: none;
     text-align: center;
     border-radius: 3px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    padding-left: 4px;
 }
 
 .filter-min-price {
     position: relative;
     margin-right: 26px;
-    margin-bottom: 40px;
+    margin-bottom: 43px;
+    padding-left: 5px;
 }
 
 .filter-price-range::after {
     content: "";
     position: absolute;
     border-bottom: 1px solid #444444;
-    width: 10px;
-    top: 110px;
-    left: 106px;
-}
-
-.filter-price-range::before {
-    content: "";
-    position: absolute;
-    border-bottom: 1px solid #444444;
-    width: 10px;
-    top: 110px;
+    width: 9px;
+    top: 108px;
     left: 106px;
 }
 
@@ -1442,6 +1474,8 @@ input[type="radio"].visually-hidden {
     line-height: 1.33;
     text-align: left;
     color: black;
+    margin-top: 15px;
+    margin-bottom: 22px
 }
 
 
@@ -1513,18 +1547,18 @@ input[type="radio"].visually-hidden {
     border: 0px;
     border-bottom: 1px solid #e5e5e5;
     margin-top: 0;
-    margin-bottom: 17px;
+    margin-bottom: 23px;
 }
 
 .filter-type {
     font-family: 'PT Sans', 'Arial', serif;
     font-size: 17px;
     font-weight: bold;
-    line-height: 1.76;
     letter-spacing: 0.2px;
     text-align: left;
     color: black;
     text-transform: uppercase;
+    margin-bottom: 4px;
 }
 
 .filter-submit {
@@ -1538,7 +1572,7 @@ input[type="radio"].visually-hidden {
     border: solid 1px #e5e5e5;
     background-color: white;
     text-transform: uppercase;
-    margin-top: 58px
+    margin-top: 57px
 }
 
 .filter-submit:hover,
@@ -1559,24 +1593,25 @@ input[type="radio"].visually-hidden {
 
 .catalog {
     margin-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 }
 
 .catalog-items {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 1px;
 }
 
 .catalog-item {
     position: relative;
     display: inline-block;
     width: 218px;
-    margin-right: 19px;
+    margin-right: 20px;
     margin-bottom: 20px;
     line-height: 20px;
     font-weight: bold;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid #eaeaea;
 }
 
 .catalog-item:nth-child(3n) {
@@ -1600,10 +1635,8 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: -1px;
     right: -1px;
-
     width: 60px;
     height: 60px;
-
     text-indent: -1000px;
     overflow: hidden;
     z-index: 2;
@@ -1632,12 +1665,10 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     margin-bottom: 7px;
     padding: 7px 0;
-
     background-color: #63a63e;
     border: 3px solid #63a63e;
     border-bottom-color: #367315;
     border-radius: 3px;
-
     color: white;
     font-size: 14px;
     font-weight: normal;
@@ -1706,8 +1737,8 @@ input[type="radio"].visually-hidden {
 .catalog-item .title {
     min-height: 40px;
     padding: 0 25px;
-    margin-top: 5px;
-    margin-bottom: 15px;
+    margin-top: 11px;
+    margin-bottom: 9px;
     font-family: 'PT Sans', 'Arial', serif;
     font-size: 18px;
     font-weight: bold;
@@ -1716,8 +1747,8 @@ input[type="radio"].visually-hidden {
 
 .catalog-item .discount {
     min-height: 20px;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: 11px;
+    margin-bottom: 8px;
     color: #999;
     text-decoration: line-through;
     font-family: 'PT Sans', 'Arial', serif;
@@ -1730,9 +1761,11 @@ input[type="radio"].visually-hidden {
     display: block;
     position: relative;
     width: 80px;
-    margin: 10px auto;
+    margin: 8px auto;
     margin-bottom: 20px;
-    padding: 11px 30px;
+    margin-left: 42px;
+    padding: 10px 30px;
+    padding-left: 29px;
     color: white;
     background: #ee3643;
     border-radius: 3px;
@@ -1744,18 +1777,14 @@ input[type="radio"].visually-hidden {
 
 .catalog-item .price:after {
     content: "";
-
     position: absolute;
-    top: 0;
-    right: -20px;
-
+    top: 0px;
+    right: -21px;
     width: 0;
     height: 0;
-
-    border: 20px solid white;
+    border: 19px solid white;
     border-left-color: #ee3643;
 }
-
 
 .catalog-item:hover {
     box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
@@ -1788,7 +1817,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-next a {
-    width: 140px;
+    width: 138px;
 }
 
 .pagination-item-current a {
@@ -1827,12 +1856,9 @@ input[type="radio"].visually-hidden {
 .about-perforator-text {
     font-family: 'PT Sans', 'Arial', serif;
     font-size: 13px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.85;
     letter-spacing: normal;
-    padding-bottom: 72px;
+    padding-bottom: 69px;
     margin-bottom: 0px;
 }
 
@@ -1848,12 +1874,12 @@ input[type="radio"].visually-hidden {
 .footer-info {
     display: flex;
     background-color: #32425c;
-
+    padding-bottom: 33px;
 }
 
 .footer-container-logo-contacts {
-    width: 325px;
-    text-align: center
+    width: 335px;
+    text-align: center;
 }
 
 .main-footer-logo {
@@ -1861,8 +1887,9 @@ input[type="radio"].visually-hidden {
     width: 220px;
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
     background-color: #ee3643;
-    padding-bottom: 25px;
+    padding-bottom: 21px;
     padding-top: 20px;
+    margin-bottom: 28px
 }
 
 .main-footer-logo:hover,
@@ -1879,16 +1906,18 @@ input[type="radio"].visually-hidden {
     line-height: 1.33;
     text-align: left;
     color: white;
+    padding-left: 3px
 }
 
 .main-footer-navigation {
     display: flex;
     flex-direction: column;
-    align-items: flex-end
+    align-items: flex-end;
+    margin-top: 22px
 }
 
 .main-footer-navigation ul li {
-    margin-left: 60px;
+    margin-left: 59px;
 }
 
 .footer-navigation {
@@ -1914,6 +1943,7 @@ input[type="radio"].visually-hidden {
 
 .footer-goods {
     display: flex;
+    padding-top: 3px;
 }
 
 .footer-goods a {
@@ -1944,21 +1974,25 @@ input[type="radio"].visually-hidden {
 .footer-feedback {
     background-color: #293449;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    padding-top: 21px;
 }
 
 .footer-copyright {
-    font-size: 18px;
-    line-height: 1.33;
+    font-size: 16px;
+    line-height: 1.13;
     text-align: left;
     color: #f3f7f9;
+    padding-left: 2px
 }
 
 .footer-social {
     display: flex;
     justify-content: space-between;
     width: 132px;
-    padding-left: 60px
+    margin-left: 105px;
+    margin-top: 14px;
+    margin-right: 1px
 }
 
 .social-button {
@@ -2001,11 +2035,14 @@ input[type="radio"].visually-hidden {
     background: url("../img/icon-instagram.svg") no-repeat;
 }
 
+
 .feedback h3 {
     font-size: 16px;
     line-height: 1.13;
     text-align: left;
     color: #ffffff;
+    font-weight: normal;
+    margin-bottom: 0
 }
 
 .feedback span {
@@ -2027,14 +2064,17 @@ input[type="radio"].visually-hidden {
 }
 
 .developer {
-    margin-left: 53px;
+    margin-left: 52px;
+    margin-right: 13px
 }
 
 .developer h3 {
     font-size: 16px;
+    font-weight: normal;
     line-height: 1.13;
     text-align: left;
     color: #ffffff;
+    margin-bottom: 0;
 }
 
 .developer a {
@@ -2070,6 +2110,10 @@ input[type="radio"].visually-hidden {
 
 
 /*-----index.html-----*/
+
+.modal-show {
+    display: block;
+}
 
 .modal-write-us,
 .add-to-cart {
@@ -2290,5 +2334,5 @@ input[type="radio"].visually-hidden {
 .modal {
     position: fixed;
     z-index: 3;
-    DISPLAY: NONE;
+    display: none;
 }

@@ -105,7 +105,7 @@
                         </li>
                         <li class="goods-item goods-delivery">
                             <h3>Доставка</h3>
-                            <a href="#" class="button goods-item-button">Доставка</a>
+                            <a href="#" class="button goods-item-button">Бесплатно</a>
                         </li>
                     </ul>
                 </div>
@@ -159,30 +159,31 @@
                     </li>
 
                 </ul>
-                <section class="popular-manufacturer">
-                    <div class="popular-manufacturer-catalog">
-                        <h2 class="popular-manufacturer-title">Популярные производители:</h2>
-                        <a href="#" class="button manufacturer-button">Все производители</a>
-                    </div>
-                    <ul class="manufacturer-list">
-                        <li><a href="#" class="manufacturer-logo bosch"><img src="img/brand-bosch.jpg" alt="Bosch"></a>
-                        </li>
-                        <li><a href="#" class="manufacturer-logo makita"><img src="img/brand-makita.jpg" alt="Makita"></a>
-                        </li>
-                        <li><a href="#" class="manufacturer-logo dewalt"><img src="img/brand-de-walt.jpg" alt="DeWalt"></a>
-                        </li>
-                        <li><a href="#" class="manufacturer-logo interskol"><img src="img/brand-interskol.jpg" alt="Интерскол"> </a>
-                        </li>
-                        <li><a href="#" class="manufacturer-logo hitachi"><img src="img/brand-hitachi.jpg" alt="Hitachi"> </a>
-                        </li>
-                        <li><a href="#" class="manufacturer-logo lg"><img src="img/brand-lg.jpg" alt="LG"> </a>
-                        </li>
-                        <li><a href="#" class="manufacturer-logo aeg"><img src="img/brand-aeg.jpg" alt="AEG"> </a>
-                        </li>
-                        <li><a href="#" class="manufacturer-logo metabo"><img src="img/brand-metabo.jpg" alt="Metabo"></a>
-                        </li>
-                    </ul>
-                </section>
+            </section>
+            <section class="popular-manufacturer">
+                <div class="popular-manufacturer-catalog">
+                    <h2 class="popular-manufacturer-title">Популярные производители:</h2>
+                    <a href="#" class="button manufacturer-button">Все производители</a>
+                </div>
+                <ul class="manufacturer-list">
+                    <li><a href="#" class="manufacturer-logo bosch"><img src="img/brand-bosch.jpg" alt="Bosch"></a>
+                    </li>
+                    <li><a href="#" class="manufacturer-logo makita"><img src="img/brand-makita.jpg" alt="Makita"></a>
+                    </li>
+                    <li><a href="#" class="manufacturer-logo dewalt"><img src="img/brand-de-walt.jpg" alt="DeWalt"></a>
+                    </li>
+                    <li><a href="#" class="manufacturer-logo interskol"><img src="img/brand-interskol.jpg" alt="Интерскол"> </a>
+                    </li>
+                    <li><a href="#" class="manufacturer-logo hitachi"><img src="img/brand-hitachi.jpg" alt="Hitachi"> </a>
+                    </li>
+                    <li><a href="#" class="manufacturer-logo lg"><img src="img/brand-lg.jpg" alt="LG"> </a>
+                    </li>
+                    <li><a href="#" class="manufacturer-logo aeg"><img src="img/brand-aeg.jpg" alt="AEG"> </a>
+                    </li>
+                    <li><a href="#" class="manufacturer-logo metabo"><img src="img/brand-metabo.jpg" alt="Metabo"></a>
+                    </li>
+                </ul>
+            </section>
         </div>
         <div class="services-wrapper">
             <section class="container">
@@ -340,6 +341,19 @@
         <img src="img/map-popup.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <button class="modal-close" type="button">Закрыть</button>
     </section>
+
+    <script>
+        var link = document.querySelector(".contacts-button");
+
+        var popup = document.querySelector(".modal-write-us");
+
+        link.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popup.classList.add("modal-show");
+        });
+
+    </script>
+
 </body>
 
 </html>
