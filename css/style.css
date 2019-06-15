@@ -118,6 +118,7 @@ input[type="radio"].visually-hidden {
     width: 220px;
     height: 52px;
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    z-index: 1
 }
 
 .header-logo {
@@ -156,6 +157,26 @@ input[type="radio"].visually-hidden {
 .search {
     position: relative;
     padding-left: 220px;
+}
+
+.search input[type="search"]::-moz-placeholder {
+    color: #ffffff;
+}
+
+.search input[type="search"]::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.search input[type="search"]:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.search input[type="search"]::-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.search input[type="search"]::placeholder {
+    color: #ffffff;
 }
 
 .header-label {
