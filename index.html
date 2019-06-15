@@ -249,7 +249,7 @@
                 <h2 class="contacts-title">Контакты</h2>
                 <p>Вы можете забрать товар сами,<br>
                     заехав к нам в офис</p>
-                <a class="map">
+                <a class="map" href="img/map-popup.jpg">
                     <img src="img/map.jpg" alt="Схема проезда" width="300px" height="158px">
                 </a>
 
@@ -319,41 +319,31 @@
         <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
             <label>
                 <span>Ваше имя:</span><br>
-                <input type="text" name="your-name" placeholder="Имя Фамилия">
+                <input type="text" name="your-name" placeholder="Имя Фамилия" required>
             </label>
             <label class="modal-container-1">
                 <span>Ваш e-mail:</span><br>
-                <input type="email" name="your-email" placeholder="email@example.com">
+                <input type="email" name="your-email" placeholder="email@example.com" required>
             </label>
             <label>
                 <span>Текст письма:</span> <br>
-                <textarea type="text" name="letter-text" placeholder="В свободной форме"></textarea>
+                <textarea type="text" name="letter-text" placeholder="В свободной форме" required></textarea>
             </label>
             <div class="modal-container">
                 <input class="button" type="submit">
             </div>
-            <button type="button" class="modal-close">закрыть
+            <button class="modal-close" type="button">закрыть
             </button>
         </form>
     </section>
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="940" height="446" allowfullscreen></iframe>
         <img src="img/map-popup.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <button class="modal-close" type="button">Закрыть</button>
     </section>
-
-    <script>
-        var link = document.querySelector(".contacts-button");
-
-        var popup = document.querySelector(".modal-write-us");
-
-        link.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popup.classList.add("modal-show");
-        });
-
+    <script src="js/script.js">
     </script>
-
 </body>
 
 </html>
