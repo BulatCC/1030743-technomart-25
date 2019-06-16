@@ -92,7 +92,8 @@ input[type="radio"].visually-hidden {
 .goods-list-2,
 .catalog-items,
 .filter-sorting,
-.service-list {
+.service-list,
+.header-container-login {
     list-style: none;
     padding-left: 0px;
 }
@@ -1243,6 +1244,7 @@ input[type="radio"].visually-hidden {
     text-align: left;
     text-transform: uppercase;
     padding-right: 40px;
+    color: black;
 }
 
 .perfator-curent {
