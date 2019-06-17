@@ -6,7 +6,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum%7CPT+Sans&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -90,13 +90,15 @@
                         <a href="#" class="button goods-item-button">Для стройки</a>
                     </li>
                 </ul>
+                <!---свойство display для слайдера находится в самом низу CSS файла--->
                 <article class="slider-goods-drill">
+                    <a class="slider-switch" href="#">перключение слайда</a>
                     <h4 class="slider-title">Дрели</h4>
                     <span>Соседям на радость!</span>
                     <a href="catalog.html" class="button slider-button">Открыть каталог</a>
-
                 </article>
                 <article class="slider-goods-perforator">
+                    <a class="slider-switch" href="#">перключение слайда</a>
                     <h4 class="slider-title">Перфораторы</h4>
                     <span>Настоящие мужские игрушки</span>
                     <a href="catalog.html" class="button slider-button">Открыть каталог</a>
@@ -213,7 +215,7 @@
                     <div class="services-service">
                         <h2 class="services-title">Доставка</h2>
                         <p class="delivery">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                            Ведь мы неплохо заработаем,<br>
+                            Ведь мы неплохо заработаем,
                             поднимая его на ваш этаж!</p>
                     </div>
                 </div>
@@ -248,7 +250,7 @@
             <section class="about-company">
                 <h2 class="about-company-title">Компания «Техномарт»</h2>
                 <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-                <p>Мы можем доставить ваш товар в самые отдаленные точки России<br>
+                <p>Мы можем доставить ваш товар в самые отдаленные точки России.<br>
                     Техномарт работает со многими транспортными компаниями: </p>
                 <ul class="delivery-company">
                     <li class="deilivery-company-item">Деловые линии</li>
@@ -259,13 +261,12 @@
             </section>
             <section class="contacts-main">
                 <h2 class="contacts-title">Контакты</h2>
-                <p>Вы можете забрать товар сами,<br>
-                    заехав к нам в офис</p>
+                <p>Вы можете забрать товар сами,
+                    заехав к нам в офис.</p>
                 <a class="map" href="img/map-popup.jpg">
                     <img src="img/map.jpg" alt="Схема проезда" width="300" height="158">
                 </a>
-
-                <a class="button contacts-button" href="#">Заблудились? Напишите нам!</a>
+                <a class="button contacts-button" href="write-us.html">Заблудились? Напишите нам!</a>
             </section>
         </div>
     </main>
@@ -286,7 +287,7 @@
                         <ul class="footer-navigation">
                             <li><a href="#">Компания</a></li>
                             <li><a href="#">Новости</a></li>
-                            <li><a href="#">Каталог</a></li>
+                            <li><a href="catalog.html">Каталог</a></li>
                             <li><a href="#">Доставка</a></li>
                             <li><a href="#">Контакты</a></li>
                         </ul>
@@ -342,7 +343,7 @@
                 <textarea name="letter-text" placeholder="В свободной форме" required></textarea>
             </label>
             <div class="modal-container">
-                <input class="button" type="submit">
+                <button type="submit" class="button button-submit-modal">отправить</button>
             </div>
             <button class="modal-close" type="button">закрыть
             </button>
@@ -354,7 +355,7 @@
         <img src="img/map-popup.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <script src="js/script.js">
+    <script src="js/script.min.js">
     </script>
 </body>
 

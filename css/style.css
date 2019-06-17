@@ -27,7 +27,6 @@ img {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
     position: absolute;
-
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -450,13 +449,6 @@ input[type="radio"].visually-hidden {
     margin-top: 9px;
 }
 
-.logged .button-header {
-    font-size: 16px;
-    color: #32425c;
-    text-decoration: underline;
-}
-
-
 .logged a:active {
     color: rgba(0, 0, 0, 0.3);
 }
@@ -476,7 +468,7 @@ input[type="radio"].visually-hidden {
 }
 
 .button-header-catalog-name::before {
-    content: "";
+    content: "профиль";
     position: absolute;
     background: url("../img/icon-user.svg");
     height: 18px;
@@ -484,28 +476,19 @@ input[type="radio"].visually-hidden {
     left: 15px;
     top: 12px;
     opacity: 0.3;
+    font-size: 0;
 }
 
-.logout {
+.button-header-catalog-name::after {
+    content: "выход";
     position: absolute;
     background: url("../img/icon-logout.svg");
-    height: 17px;
+    height: 18px;
     width: 20px;
-    right: 11px;
+    left: 271px;
     top: 12px;
     opacity: 0.3;
-}
-
-.logout:hover {
-    opacity: 1;
-}
-
-.logout:active {
-    opacity: 0.3;
-}
-
-.button-header-catalog-name:hover {
-    color: black;
+    font-size: 0;
 }
 
 .header-container-login {
@@ -729,10 +712,11 @@ input[type="radio"].visually-hidden {
 
 .slider-goods-drill {
     position: relative;
-    background: url("../img/slider-image.jpg");
+    background: url("../img/slider-image.jpg") no-repeat;
+    background-color: burlywood;
     width: 620px;
     height: 266px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .slider-title {
@@ -763,8 +747,12 @@ input[type="radio"].visually-hidden {
     margin-top: 123px;
 }
 
-.slider-goods-drill::before {
-    content: "";
+.slider-switch {
+    font-size: 0;
+}
+
+.slider-switch::before {
+    content: "назад";
     position: absolute;
     background: url("../img/icon-left-button.svg");
     width: 22px;
@@ -773,8 +761,8 @@ input[type="radio"].visually-hidden {
     top: 114px;
 }
 
-.slider-goods-drill::after {
-    content: "";
+.slider-switch::after {
+    content: "вперед";
     position: absolute;
     background: url("../img/icon-right-button.svg");
     width: 22px;
@@ -785,10 +773,11 @@ input[type="radio"].visually-hidden {
 
 .slider-goods-perforator {
     position: relative;
-    background: url("../img/slide-image-peforators.jpg");
+    background: url("../img/slide-image-peforators.jpg") no-repeat;
+    background-color: burlywood;
     min-width: 620px;
     height: 266px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .slider-goods-perforator span {
@@ -799,8 +788,8 @@ input[type="radio"].visually-hidden {
     padding-left: 26px;
 }
 
-.slider-goods-perforator::before {
-    content: "";
+.slider-switch::before {
+    content: "назад";
     position: absolute;
     background: url("../img/icon-left-button.svg");
     width: 22px;
@@ -809,8 +798,8 @@ input[type="radio"].visually-hidden {
     top: 114px;
 }
 
-.slider-goods-perforator::after {
-    content: "";
+.slider-switch::after {
+    content: "вперед";
     position: absolute;
     background: url("../img/icon-right-button.svg");
     width: 22px;
@@ -1170,6 +1159,7 @@ input[type="radio"].visually-hidden {
     text-align: left;
     text-transform: uppercase;
     margin-bottom: 26px;
+
 }
 
 
@@ -1179,6 +1169,7 @@ input[type="radio"].visually-hidden {
     line-height: 1.85;
     text-align: left;
     margin-bottom: 31px;
+    width: 220px;
 }
 
 .map {
@@ -1645,7 +1636,6 @@ input[type="radio"].visually-hidden {
 
 .catalog-item {
     position: relative;
-    display: inline-block;
     width: 218px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -1698,8 +1688,8 @@ input[type="radio"].visually-hidden {
     z-index: 1;
 }
 
-.catalog-item .actions .buy,
-.catalog-item .actions .bookmark {
+.catalog-item .buy,
+.catalog-item .bookmark {
     position: relative;
     display: block;
     width: 129px;
@@ -1728,13 +1718,13 @@ input[type="radio"].visually-hidden {
     opacity: 0.3
 }
 
-.catalog-item .actions .buy:hover {
+.catalog-item .buy:hover {
     background-color: #5fbb2d;
     border: 3px solid #5fbb2d;
     border-bottom-color: #367315;
 }
 
-.catalog-item .actions .buy:active {
+.catalog-item .buy:active {
     background-color: #518534;
     border: 3px solid #518534;
 }
@@ -1743,17 +1733,17 @@ input[type="radio"].visually-hidden {
     opacity: 1;
 }
 
-.catalog-item .actions .bookmark {
+.catalog-item .bookmark {
     color: #32425c;
     background: white;
     border-bottom-color: #63a63e;
 }
 
-.catalog-item .actions .bookmark:hover {
+.catalog-item .bookmark:hover {
     border: 3px solid #32425c;
 }
 
-.catalog-item .actions .bookmark:active {
+.catalog-item .bookmark:active {
     border: 3px solid #32425c;
     opacity: 0.3;
 }
@@ -2301,10 +2291,14 @@ input[type="radio"].visually-hidden {
     height: 110px;
 }
 
-.modal-container input[type="submit"] {
+.button-submit-modal {
     padding: 10px;
     border: none;
     width: 460px;
+}
+
+.button-submit-modal:active {
+    outline: none;
 }
 
 .modal-container {
@@ -2394,9 +2388,7 @@ input[type="radio"].visually-hidden {
 
 /*-----Дрели перфораторы----*/
 
-.slider-goods-drill {
-    display: ;
-}
+.slider-goods-drill {}
 
 .slider-goods-perforator {
     display: none;
@@ -2404,9 +2396,7 @@ input[type="radio"].visually-hidden {
 
 /*-----Сервисы-----*/
 
-.slider-service-delivery {
-    display: ;
-}
+.slider-service-delivery {}
 
 .slider-service-guarantee {
     display: none;
