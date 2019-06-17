@@ -740,7 +740,8 @@ input[type="radio"].visually-hidden {
 
 .slider-button {
     box-sizing: border-box;
-    padding: 10px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 4;
     width: 195px;
     margin-left: 25px;
@@ -751,6 +752,15 @@ input[type="radio"].visually-hidden {
     font-size: 0;
 }
 
+.slider-goods-perforator {
+    position: relative;
+    background: url("../img/slide-image-peforators.jpg") no-repeat;
+    background-color: burlywood;
+    width: 620px;
+    height: 266px;
+    margin-bottom: 20px;
+}
+
 .slider-switch::before {
     content: "назад";
     position: absolute;
@@ -771,14 +781,6 @@ input[type="radio"].visually-hidden {
     top: 114px;
 }
 
-.slider-goods-perforator {
-    position: relative;
-    background: url("../img/slide-image-peforators.jpg") no-repeat;
-    background-color: burlywood;
-    min-width: 620px;
-    height: 266px;
-    margin-bottom: 20px;
-}
 
 .slider-goods-perforator span {
     font-size: 18px;
@@ -788,25 +790,7 @@ input[type="radio"].visually-hidden {
     padding-left: 26px;
 }
 
-.slider-switch::before {
-    content: "назад";
-    position: absolute;
-    background: url("../img/icon-left-button.svg");
-    width: 22px;
-    height: 40px;
-    left: 26px;
-    top: 114px;
-}
 
-.slider-switch::after {
-    content: "вперед";
-    position: absolute;
-    background: url("../img/icon-right-button.svg");
-    width: 22px;
-    height: 40px;
-    left: 578px;
-    top: 114px;
-}
 
 /*-----Main goods SLIDER end-----*/
 
@@ -877,8 +861,6 @@ input[type="radio"].visually-hidden {
     height: 145px;
     margin-bottom: 20px;
 }
-
-
 
 .makita img,
 .dewalt img {
@@ -1161,7 +1143,6 @@ input[type="radio"].visually-hidden {
     margin-bottom: 26px;
 
 }
-
 
 .contacts-main p {
     font-family: 'PT Sans', 'Arial', serif;
@@ -2376,7 +2357,7 @@ input[type="radio"].visually-hidden {
 
 /*--------------------------*/
 /*                          */
-/* Модальные окна */
+/*     Модальные окна       */
 /*          Вкл/Вкл         */
 /*            Тут           */
 /*             ↓            */
